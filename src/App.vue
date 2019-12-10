@@ -1,17 +1,24 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <Counter module="counterA"/>
+    <Counter module="counterB"/>
+    <DoubleCounter module="doubleCounterA"/>
+    <DoubleCounter module="doubleCounterB"/>
+    <TotalCounter/>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import Counter from "./components/Counter";
+import DoubleCounter from "./components/DoubleCounter";
+import TotalCounter from "./components/TotalCounter";
 
 export default {
   name: "app",
   components: {
-    HelloWorld
+    Counter,
+    DoubleCounter,
+    TotalCounter,
   }
 };
 </script>
